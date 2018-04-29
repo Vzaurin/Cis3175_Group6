@@ -1,0 +1,113 @@
+<!--bootstap_marketing.html
+Later edited by group 6: Victor Zaurin, Scott Mosher, Jared Brennan,
+ Elon Hazell, and Zachary Borodemos-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+	  background-color: green;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: green;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 50% /* Set width to 100% */
+      margin: auto;
+      min-height:100px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 400px) {
+    .carousel-caption {
+      display: none;
+    }
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="../index.html"> <img src="../images/logo.png" style="width:100px; height:100px;"  ></img></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../index.html">Home</a></li>
+        <li><a href="../html/about.html">About</a></li>
+        <li><a href="../html/options.html">Hoof care Options</a></li>
+		<li><a href="../html/photos.html">Photo Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-center">
+		<li><h1 style="color:blue;"> Randy Cutlip Farrier </h1></li></ul>
+      <!--<ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>-->
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <h2>Contact Randy Cutlip Farrier</h2>
+  <address>Company's Name: Randy Cutlip Farrier  <br>
+	Address: 370 McCracken Rd.<br>
+	City: Lake Helen
+	<BR> State: Florida
+	<br> Zip Code: 32744<br>
+	Phone Number: (407) 468-3250<br>
+	Point of Contact: <br>
+	Customer Service:<br>
+	Randy Cutlip- (407) 468-3250
+	<br>Hours of Operation: 8:00 a.m-5:00 p.m.</address>
+	<p id="gr"> If you have a problem fill out the area below.</p>
+  <form>
+  <div class="form-group">
+      <label for="first name">First Name:</label>
+      <input type="first name" class="form-control" id="first name" placeholder="Enter first name">
+    </div>
+	<div class="form-group">
+      <label for="last name">Last Name:</label>
+      <input type="last name" class="form-control" id="last name" placeholder="Enter last name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+    </div>
+	<div class="form-group">
+      <label for="problem">What is your problem?:</label>
+      <input type="problem" class="form-control" id="problem" placeholder="Enter your problem">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
+
